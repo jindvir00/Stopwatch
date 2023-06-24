@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/tab_background"
+        android:backgroundTint="#EFEFEF"
+        android:gravity="center"
+        android:layout_margin="32dp">
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:background="@drawable/tab_background"
+            android:backgroundTint="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timer"/>
+        <TextView
+            android:id="@+id/records"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="@drawable/tab_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Records"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll_swap"/>
+
+
+</LinearLayout>

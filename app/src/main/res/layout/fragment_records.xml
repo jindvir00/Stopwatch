@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RecordsFragment">
+
+    <SearchView
+        android:id="@+id/searchRec"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:iconifiedByDefault="false"
+        android:layout_margin="32dp"
+        android:queryHint="Search"
+        android:background="@drawable/tab_background"
+        android:backgroundTint="@color/grey"
+        android:queryBackground="@android:color/transparent"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_lap_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        tools:listitem="@layout/lap_item_record"/>
+
+</LinearLayout>
